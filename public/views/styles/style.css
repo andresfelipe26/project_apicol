@@ -84,22 +84,34 @@ button:hover {
 
 #paginationControls {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
-#searchInput {
-    padding: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-}
-
-.mb-3 {
-    margin-bottom: 1rem;
-}
-
-.d-flex {
+#paginationControls ul {
+    list-style: none;
+    padding: 0;
     display: flex;
 }
 
-.justify-content-center {
-    justify-content: center;
+#paginationControls li {
+    margin: 0 5px;
 }
+
+#paginationControls a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #4a90e2;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#paginationControls a:hover {
+    background-color: #f0f8ff;
+    color: #357abd;
+}
+
